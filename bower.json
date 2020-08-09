@@ -1,0 +1,17 @@
+{
+  "name": "react-source-learn",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "yuezhichao <yuezhichao@huami.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

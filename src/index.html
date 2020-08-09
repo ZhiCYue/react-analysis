@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="../bower_components/react/react.development.js"></script>
+    <script src="../bower_components/react/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        class App extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    color: 'blue',
+                    text: 'hello'
+                }
+            }
+
+            render() {
+                const { color, text } = this.state;
+                return (
+                    <button className={`btn btn-${color}`}>
+                        <em>{text}</em>
+                    </button>
+                )
+            }
+        };
+        
+        ReactDOM.render(<App />, document.getElementById('root'));
+        
+    </script>
+</body>
+
+</html>
